@@ -1,0 +1,85 @@
+{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"loop": {
+		"prefix": "first loop",
+		"body": [
+			"for(int ${1:label} = 0; ${1:label}< $2 ; ${1:label}++)",
+			"{",
+			"$0",
+			"}",
+		],
+		"description": "loop code"
+	},
+	"start": {
+		"prefix": "start",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"int main()",
+			"{",
+			"",
+			"$1  ;",
+			"",
+			"return 0;",
+			"}",
+		],
+		"description": "start code"
+	},
+	"sort": {
+		"prefix": "sort",
+		"body": [
+			"sort( ${1:label}.begin(),${1:label}.end());",
+		],
+		"description": "sort code"
+	},
+	"vector pair": {
+		"prefix": "int pair",
+		"body": [
+			"vector< pair <int,int> > $1;",
+		],
+		"description": "vector pair"
+	},
+	"cin": {
+		"prefix": "cnn",
+		"body": [
+			"cin>>$1",
+		],
+		"description": "cin"
+	},
+	"cout": {
+		"prefix": "coot",
+		"body": [
+			"cout<<$1",
+		],
+		"description": "cout"
+	},
+	"linkedlist": {
+		"prefix": "linkedlist",
+		"body": [
+			"struct Node {",
+			"int data;",
+				"struct Node *next;	",
+			"};",
+			"struct Node* head = NULL;",
+			"void insert(int new_data) {",
+			"struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));",
+			"new_node->data = new_data;",
+			"new_node->next = head;",
+			"head = new_node;",
+			"}",
+			"void display() {",
+			"struct Node* ptr;",
+			"ptr = head;",
+			"while (ptr != NULL) {",
+			"cout<< ptr->data <<' ';",
+			"ptr = ptr->next;",
+			"}",
+			"}",
+		],
+		"description": "initialize a linked list"
+	},
+}
